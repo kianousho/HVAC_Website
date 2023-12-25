@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" media="all"
+href="../static/css/styles.css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+    <h1>This is a secured page!</h1>
+
+    <h1>Home Page</h1>
+
+    <table th:if="${furnaceList != null AND furnaceList != ''}">
+        <tr>
+            <th>id</th>
+            <th>Image</th>
+            <th>LINK</th>
+            <th>ASIN</th>
+            <th>Brand</th>
+            <th>Wattage</th>
+            <th>price</th>
+            <th>wieght</th>
+            <th>description</th>
+        </tr>
+        <!--   
+        <div th:replace="${user} ? ~{fragments/links.html :: div.user} : ~{fragments/links.html ::div.guest}"></div>
+        -->
+          
+        <tr th:each="s : ${furnaceList}">
+            <td th:text="${s.id}">id</td>
+             <td>
+              <img th:src="@{'/images/furnace' + ${s.id} + '.jpg'}" alt="Furnace Image" style="width: 100px; height: auto;"/>
+            </td>
+            <td><a th:href="@{'/secure/viewFurnace/' + ${s.id}}"><span th:text="${s.Brand}">BRAND</span></a></td>
+            <td th:text="${s.asin}">ASIN</td>
+            <td th:text="${s.brand}">Brand</td>
+            <td th:text="${s.wattage}">wattage</td>
+            <td th:text="${s.price}">price</td>
+            <td th:text="${s.weight}">weight</td>
+            <td th:text="${s.description}">description</td>
+             
+            <td><a th:href="@{'/secure/editFurnaceById/' + ${s.id}}">Edit</a></td>
+            <td><a th:href="@{'/secure/deleteFurnaceById/' + ${s.id}}">Delete</a></td>
+             
+        </tr>
+        
+    </table>
+
+    <br><hr><br><br>
+
+    <form method="post" action="#" th:action="@{/secure/insertFurnace}" th:object="${furnace}">
+        <input type="hidden" name="id" th:field="*{id}"/><br>
+        Brand: <input type="text" name="brand" th:field="*{brand}" /><br>
+        Wattage: <input type="text" name="wattage" th:field="*{wattage}" /><br>
+        Weight: <input type="text" name="weight" th:field="*{weight}" /><br>
+        Price: <input type="number" name="price" th:field="*{price}" /><br>
+        ASIN: <input type="number" name="asin" th:field="*{asin}" /><br>
+        Description: <input type="text" name="description" th:field="*{description}" /><br>
+	
+    	<input type="submit" value="Add to Cart" />
+        <br>
+        <input type="submit" value="Go!" />
+    </form>
+
+    
+    <br><hr><br><br>
+
+    <p>
+        <a th:href="@{/}">Back to home page</a>
+    </p>
+
+    <form method="post" th:action="@{/logout}">
+        <input type="submit" value="Logout" />
+    </form>
+    
+    <br><hr><br><br>
+    
+    <form method="post" th:action="@{/secure/index}">
+        <input type="submit" value="login" />
+    </form>
+    
+</body>
+</html>

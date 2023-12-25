@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodman</title>
+    <link rel="stylesheet" type="text/css" media="all"
+href="../static/css/booksCss.css" th:href="@{/css/booksCss.css}" />
+
+</head>
+<body>
+
+    <header>
+        <h1>Goodman GMVC960804CN Upflow/Horizonta Furnace</h1>
+        <p> ComfortNet | 96% AFUE | 2-Stage | Variable ECM (80,000 BTU, 1600 CFM)</p>
+    </header>
+
+    <section>
+        <img src="../static/images/furnace1.jpg" th:src="@{/images/furnace1.jpg}">
+        <p><strong>Brand:</strong> Goodman </p>
+        <p><strong>Weight:</strong> 1300 KG </p>
+        <p><strong>Publisher:</strong> Plata Publishing</p>
+
+        <h2>About the Furnace</h2>
+        <p>
+            Goodman GMVC960804CN Upflow/Horizontal Furnace
+Variable-Speed ECM Two-Stage 96% AFUE Energy Star ComfortBridge CoolCloud
+Heating: 80,000 BTU 0 kW, Cooling: 0 BTU, 115 VAC, 1 Phase, 60 Hz, 1600 CFM, 21" Cabinet Width
+Register your new Goodman unit for enhanced warranty coverage at no cost. Be confident with a 10-year unit replacement limited warranty and lifetime compressor limited warranty.
+ To top it all off, Goodman offers a 10-year parts limited warranty that provides replacement part(s) for any part that is found to be defective due to workmanship or materials under normal use and maintenance.
+        </p>
+
+        
+       
+
+        <h2>Reviews</h2>
+        <p>
+            Its been working for 10 years and still so good
+            people appreciate the practical insights and the shift in mindset it encourages towards financial success.
+        </p>
+    </section>
+
+<footer th:replace="fragments/links.html :: footer"></footer>

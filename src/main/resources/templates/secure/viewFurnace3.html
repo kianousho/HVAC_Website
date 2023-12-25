@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Dad Poor Dad - Book Overview</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Rich Dad Poor Dad</h1>
+        <p>What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!</p>
+    </header>
+
+    <section>
+        <img src="../static/images/furnace3.jpg" th:src="@{/images/furnace3.jpg}">
+        <p><strong>Brand:</strong> Williams</p>
+        <p><strong>Wattage:</strong>  2000 W</p>
+        <p><strong>Weigh:</strong> 82 kg</p>
+
+        <h2>About the Book</h2>
+        <p>
+            "Rich Dad Poor Dad" is a personal finance classic that challenges conventional wisdom about money.
+            In this book, Robert T. Kiyosaki shares the lessons he learned from his "rich dad" and "poor dad,"
+            offering insights into building wealth, investing, and achieving financial independence.
+        </p>
+
+        <h2>Key Concepts</h2>
+        
+            <li>The importance of financial education</li>
+            <li>Assets vs. Liabilities</li>
+            <li>The role of entrepreneurship in building wealth</li>
+            <li>Investing in real estate and other income-generating assets</li>
+       
+
+        <h2>Reviews</h2>
+        <p>
+            "Rich Dad Poor Dad" has been praised for its straightforward advice on money and investing.
+            Readers appreciate the practical insights and the shift in mindset it encourages towards financial success.
+        </p>
+    </section>
+
+<footer th:replace="fragments/links.html :: footer"></footer>
+    
+
+</body>
+</html>

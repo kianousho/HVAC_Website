@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+/* styles.css */
+
+body {
+    background-color: beige;
+    color: green;
+}
+
+h1 {
+    color: green;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: green;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: beige;
+}
+
+form {
+    color: green;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: green;
+    color: beige;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+hr {
+    border-color: green;
+}
+
+a {
+    color: green;
+}

@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+        body {
+            font-family: 'Arial', sans-serif;
+            background: hsl(218deg 50% 91%);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(99, 177, 248);
+            color: rgb(0, 0, 255);
+            padding: 1em;
+        }
+
+        h1 {
+            margin-bottom: 0.5em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: rgb(99, 177, 248);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgb(99, 177, 248);
+            color: rgb(0, 0, 255);
+            padding: 1em;
+        }
