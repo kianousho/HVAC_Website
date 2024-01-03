@@ -90,5 +90,5 @@ feel free to add your desired user and make any changes!
 ## 🔗 Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kia-heidari-b1b458268/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/young_ramati)
+[![twitter](https://img.shields.io/twitter/follow/young_ramati)](https://twitter.com/young_ramati)
 
